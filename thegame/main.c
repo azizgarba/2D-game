@@ -34,7 +34,7 @@ int main ( int argc, char** argv )
     Menu *m = initMenu();
     mainprogEvents(m);
     // program main loop
-     // end main loop
+    // end main loop
     // all is well ;)
     printf("Exited cleanly\n");
     return 0;

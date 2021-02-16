@@ -8,6 +8,7 @@
 
 void mainprogEvents(Menu *m)
 {
+    options *Op = initOptions();
     drawMenu(m);
     int done = 0;
     while (!done)
@@ -38,7 +39,7 @@ void mainprogEvents(Menu *m)
                 }
                 if (event.key.keysym.sym == SDLK_l)
                 {
-
+                    SDL_BlitSurface(m->lg_press, 0, screen, &m->x_lg);
                 }
                 if (event.key.keysym.sym == SDLK_o)
                 {
@@ -62,17 +63,18 @@ void mainprogEvents(Menu *m)
 
                 if (event.key.keysym.sym == SDLK_n)
                 {
-                    SDL_FreeSurface(m->ng_press);
+                    SDL_BlitSurface(m->butt_play, 0, screen, &m->x_play);
                     //game();
                 }
                 if (event.key.keysym.sym == SDLK_l)
                 {
+                    SDL_BlitSurface(m->butt_load, 0, screen, &m->x_load);
                     //loadgame();
                 }
                 if (event.key.keysym.sym == SDLK_o)
                 {
                     //optionsMenuEvents();
-                    options *Op = initOptions();
+
                     Drawoptions(Op);
                 }
                 if (event.key.keysym.sym == SDLK_c)
