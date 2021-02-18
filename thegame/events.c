@@ -8,6 +8,7 @@
 
 void mainprogEvents(Menu *m)
 {
+
     options *Op = initOptions();
     drawMenu(m);
     int done = 0;
@@ -73,9 +74,7 @@ void mainprogEvents(Menu *m)
                 }
                 if (event.key.keysym.sym == SDLK_o)
                 {
-                    //optionsMenuEvents();
-
-                    Drawoptions(Op);
+                    optionsMenuEvents(Op);
                 }
                 if (event.key.keysym.sym == SDLK_c)
                 {
@@ -87,6 +86,58 @@ void mainprogEvents(Menu *m)
                 }
             }
             } // end switch
+        } // end events
+        // finally, update the screen :)
+        SDL_Flip(screen);
+    }
+}
+
+void optionsMenuEvents(options *Op)
+{
+    Menu *m;
+    Drawoptions(Op);
+    int done = 0;
+    while (!done)
+    {
+
+        // message processing loop
+        SDL_Event event;
+        while (SDL_PollEvent(&event))
+        {
+            // check for messages
+            switch (event.type)
+            {
+            // exit if the window is closed
+            case SDL_QUIT:
+                done = 1;
+                break;
+            // check for keypresses
+            case SDL_KEYUP:
+            {
+                if (event.key.keysym.sym == SDLK_ESCAPE)
+                {
+                    done = 1;
+                }
+
+                if (event.key.keysym.sym == SDLK_f)
+                {
+                    //screen = SDL_SetVideoMode(0, 0, 0,SDL_FULLSCREEN); //More complicated than I thought!!!
+                }
+                if (event.key.keysym.sym == SDLK_w)
+                {
+                    screen = SDL_SetVideoMode(800, 600, 0,SDL_HWSURFACE|SDL_DOUBLEBUF);
+                }
+                if (event.key.keysym.sym == SDLK_v)
+                {
+                    //Will work on it.. eventually.
+                }
+                if (event.key.keysym.sym == SDLK_e)
+                {
+                    mainprogEvents(m); //<---------------- CRASH ????? why the f
+                }
+
+            }
+            }// end switch
         } // end events
         // finally, update the screen :)
         SDL_Flip(screen);

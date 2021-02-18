@@ -306,7 +306,7 @@
 	<stdlib.h>
 	<windows.h>
 
-1613437987 source:c:\users\dell\documents\github\thegame\thegame\options.c
+1613675801 source:c:\users\dell\documents\github\thegame\thegame\options.c
 	"options.h"
 	"globale.h"
 
@@ -315,7 +315,7 @@
 	<SDL/SDL_image.h>
 	<stdlib.h>
 
-1613437126 source:c:\users\dell\documents\github\thegame\thegame\events.c
+1613677562 source:c:\users\dell\documents\github\thegame\thegame\events.c
 	<SDL/SDL.h>
 	<SDL/SDL_image.h>
 	<stdlib.h>
@@ -323,12 +323,12 @@
 	"Menu.h"
 	"options.h"
 
-1613347919 c:\users\dell\documents\github\thegame\thegame\events.h
+1613676792 c:\users\dell\documents\github\thegame\thegame\events.h
 	"Menu.h"
 	"globale.h"
-	"events.h"
+	"options.h"
 
-1613434878 source:c:\users\dell\documents\github\thegame\thegame\main.c
+1613677311 source:c:\users\dell\documents\github\thegame\thegame\main.c
 	"Menu.h"
 	"globale.h"
 	"initM.h"

@@ -7,7 +7,7 @@
 
 int main ( int argc, char** argv )
 {
-    int width = 800, height = 600;
+    //int width = 800, height = 600; not really needed actually
 
     // initialize SDL video
     if ( SDL_Init( SDL_INIT_VIDEO ) < 0 )
@@ -20,7 +20,7 @@ int main ( int argc, char** argv )
     atexit(SDL_Quit);
 
     // create a new window
-    screen = SDL_SetVideoMode(width, height, 16,SDL_HWSURFACE|SDL_DOUBLEBUF);
+    screen = SDL_SetVideoMode(800, 600, 0,SDL_HWSURFACE|SDL_DOUBLEBUF);
 
     if ( !screen )
     {

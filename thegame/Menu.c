@@ -116,6 +116,4 @@ void drawMenu(Menu *m)
     SDL_BlitSurface(m->butt_options, 0, screen, &m->x_options);
     SDL_BlitSurface(m->butt_quit, 0, screen, &m->x_quit);
     //
-
-
 }
