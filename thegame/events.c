@@ -5,10 +5,11 @@
 #include "events.h"
 #include "Menu.h"
 #include "options.h"
+#include "fs.h"
 
 void mainprogEvents(Menu *m)
-{
 
+{
     options *Op = initOptions();
     drawMenu(m);
     int done = 0;
@@ -121,11 +122,17 @@ void optionsMenuEvents(options *Op)
 
                 if (event.key.keysym.sym == SDLK_f)
                 {
+                    switchFullScreen();
+                    Menu *m = initMenu();
+                    mainprogEvents(m);
+                    optionsMenuEvents(Op);
                     //screen = SDL_SetVideoMode(0, 0, 0,SDL_FULLSCREEN); //More complicated than I thought!!!
                 }
                 if (event.key.keysym.sym == SDLK_w)
                 {
                     screen = SDL_SetVideoMode(800, 600, 0,SDL_HWSURFACE|SDL_DOUBLEBUF);
+                    Menu *m = initMenu();
+                    mainprogEvents(m);
                 }
                 if (event.key.keysym.sym == SDLK_v)
                 {
@@ -133,7 +140,8 @@ void optionsMenuEvents(options *Op)
                 }
                 if (event.key.keysym.sym == SDLK_e)
                 {
-                    mainprogEvents(m); //<---------------- CRASH ????? why the f
+                    Menu *m = initMenu();
+                    mainprogEvents(m); //<----------------
                 }
 
             }
