@@ -10,6 +10,7 @@
 void mainprogEvents(Menu *m)
 
 {
+    //Mix_PlayMusic(bg_music, -1);
     options *Op = initOptions();
     drawMenu(m);
     int done = 0;
@@ -38,18 +39,23 @@ void mainprogEvents(Menu *m)
                 if (event.key.keysym.sym == SDLK_n)
                 {
                     SDL_BlitSurface(m->butt_play, 0, screen, 0);
+                    //Mix_PlayMusic(select1, 1);
+
                 }
                 if (event.key.keysym.sym == SDLK_l)
                 {
                     SDL_BlitSurface(m->butt_load, 0, screen, 0);
+                    //Mix_PlayMusic(select2, 1);
                 }
                 if (event.key.keysym.sym == SDLK_o)
                 {
                     SDL_BlitSurface(m->butt_options, 0, screen, 0);
+                    //Mix_PlayMusic(select3, 1);
                 }
                 if (event.key.keysym.sym == SDLK_c)
                 {
                     SDL_BlitSurface(m->butt_cr, 0, screen, 0);
+                    //Mix_PlayMusic(select4, 1);
                 }
                 if (event.key.keysym.sym == SDLK_a)
                 {

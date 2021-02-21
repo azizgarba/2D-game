@@ -9,10 +9,17 @@ Menu *initMenu()
     m->bg = IMG_Load("bg.png");
     //Init Audio for the Menu
     //int Mix_Init(MIX_INIT_MP3);
+    //Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 1024);
+    //Loading variables to play as music and chunks
+    //Mix_Music *bg_music, *select1, *select2, *select3, *select4, *enter;
+    //bg_music = Mix_LoadMUS("MM1.mp3");
+    //select1 = Mix_LoadMUS("S1.mp3");
+    //select2 = Mix_LoadMUS("S2.mp3");
+    //select3 = Mix_LoadMUS("S3.mp3");
+    //select4 = Mix_LoadMUS("S4.mp3");
+    //enter = Mix_LoadMUS("E1.mp3");
+    //Loading music variables is completed.
 
-
-    //
-    //
     ////////////////////////////////////////////
     ////////////////////////////////////////////
     //New game selection Menu
