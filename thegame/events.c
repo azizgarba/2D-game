@@ -28,6 +28,63 @@ void mainprogEvents(Menu *m)
             case SDL_QUIT:
                 done = 1;
                 break;
+            // check for mouse clicks
+            case SDL_MOUSEBUTTONUP:
+            {
+
+
+                    if ((event.button.x > m->x_invis_butt3.x) && (event.button.x < m->x_invis_butt3.x + 163) && (event.button.y > m->x_invis_butt3.y) && (event.button.y < m->x_invis_butt3.y + 44))
+                    {
+                        //SDL_BlitSurface(m->butt_options, 0, screen, 0);
+                        optionsMenuEvents(Op);
+                        //Mix_PlayMusic(select3, 1);
+                    }
+                    if ((event.motion.x > m->x_invis_butt5.x) && (event.motion.x < m->x_invis_butt5.x + 92) && (event.motion.y > m->x_invis_butt5.y) && (event.motion.y < m->x_invis_butt5.y + 44))
+                    {
+                        done = 1;
+                    }
+                     break;
+
+            }
+            // check for mouse motion
+            case SDL_MOUSEMOTION:
+            {
+                if ((event.motion.x > m->x_invis_butt1.x) && (event.motion.x < m->x_invis_butt1.x + 194) && (event.motion.y > m->x_invis_butt1.y) && (event.motion.y < m->x_invis_butt1.y + 44))
+                {
+                    SDL_BlitSurface(m->butt_play, 0, screen, 0);
+                    //Mix_PlayMusic(select1, 1);
+                     break;
+                }
+                else if ((event.motion.x > m->x_invis_butt2.x) && (event.motion.x < m->x_invis_butt2.x + 194) && (event.motion.y > m->x_invis_butt2.y) && (event.motion.y < m->x_invis_butt2.y + 44))
+                {
+                    SDL_BlitSurface(m->butt_load, 0, screen, 0);
+                    //Mix_PlayMusic(select2, 1);
+                     break;
+                }
+                else if ((event.motion.x > m->x_invis_butt3.x) && (event.motion.x < m->x_invis_butt3.x + 163) && (event.motion.y > m->x_invis_butt3.y) && (event.motion.y < m->x_invis_butt3.y + 44))
+                {
+                    SDL_BlitSurface(m->butt_options, 0, screen, 0);
+                    //Mix_PlayMusic(select3, 1);
+                     break;
+                }
+                else if ((event.motion.x > m->x_invis_butt4.x) && (event.motion.x < m->x_invis_butt4.x + 150) && (event.motion.y > m->x_invis_butt4.y) && (event.motion.y < m->x_invis_butt4.y + 44))
+                {
+                    SDL_BlitSurface(m->butt_cr, 0, screen, 0);
+                    //Mix_PlayMusic(select4, 1);
+                     break;
+                }
+                else if ((event.motion.x > m->x_invis_butt5.x) && (event.motion.x < m->x_invis_butt5.x + 92) && (event.motion.y > m->x_invis_butt5.y) && (event.motion.y < m->x_invis_butt5.y + 44))
+                {
+                    SDL_BlitSurface(m->butt_quit, 0, screen, 0);
+                     break;
+                }
+                else
+                {
+                    SDL_BlitSurface(m->bg, 0, screen,0);
+                     break;
+                }
+            }
+
             // check for keypresses
             case SDL_KEYDOWN:
             {
@@ -40,58 +97,74 @@ void mainprogEvents(Menu *m)
                 {
                     SDL_BlitSurface(m->butt_play, 0, screen, 0);
                     //Mix_PlayMusic(select1, 1);
+                     break;
 
                 }
                 if (event.key.keysym.sym == SDLK_l)
                 {
                     SDL_BlitSurface(m->butt_load, 0, screen, 0);
                     //Mix_PlayMusic(select2, 1);
+                     break;
                 }
                 if (event.key.keysym.sym == SDLK_o)
                 {
                     SDL_BlitSurface(m->butt_options, 0, screen, 0);
                     //Mix_PlayMusic(select3, 1);
+                     break;
                 }
                 if (event.key.keysym.sym == SDLK_c)
                 {
                     SDL_BlitSurface(m->butt_cr, 0, screen, 0);
                     //Mix_PlayMusic(select4, 1);
+                     break;
                 }
-                if (event.key.keysym.sym == SDLK_a)
+                if (event.key.keysym.sym == SDLK_e)
                 {
                     SDL_BlitSurface(m->butt_quit, 0, screen, 0);
+                    done = 1;
+                     break;
                 }
             }
-            /*case SDL_KEYUP:
-            {
-                if (event.key.keysym.sym == SDLK_ESCAPE)
+                case SDL_KEYUP:
                 {
-                    done = 1;
+                    if (event.key.keysym.sym == SDLK_ESCAPE)
+                    {
+                        done = 1;
+                    }
+
+                    if (event.key.keysym.sym == SDLK_n)
+                    {
+                        SDL_BlitSurface(m->butt_play, 0, screen, 0);
+                        //game();
+                    }
+                    if (event.key.keysym.sym == SDLK_l)
+                    {
+                        //SDL_BlitSurface(m->butt_load, 0, screen, 0);
+                        //loadgame();
+                    }
+                    if (event.key.keysym.sym == SDLK_o)
+                    {
+                        optionsMenuEvents(Op);
+                    }
+                    if (event.key.keysym.sym == SDLK_c)
+                    {
+                        //credit();
+                    }
+                    if (event.key.keysym.sym == SDLK_e)
+                    {
+                        done = 1;
+                    }
+
+                    if (event.key.keysym.sym == SDLK_MINUS)
+                    {
+                        //Mix_VolumeMusic(v) = Mix_VolumeMusic(v - 10);
+                    }
+                    if (event.key.keysym.sym == SDLK_PLUS)
+                    {
+                        //Mix_VolumeMusic(v) = Mix_VolumeMusic(v + 10);
+                    }
                 }
 
-                if (event.key.keysym.sym == SDLK_n)
-                {
-                    //SDL_BlitSurface(m->butt_play, 0, screen, 0);
-                    //game();
-                }
-                if (event.key.keysym.sym == SDLK_l)
-                {
-                    //SDL_BlitSurface(m->butt_load, 0, screen, 0);
-                    //loadgame();
-                }
-                if (event.key.keysym.sym == SDLK_o)
-                {
-                    optionsMenuEvents(Op);
-                }
-                if (event.key.keysym.sym == SDLK_c)
-                {
-                    //credit();
-                }
-                if (event.key.keysym.sym == SDLK_a)
-                {
-                    done = 1;
-                }
-            }*/
             } // end switch
         } // end events
         // finally, update the screen :)

@@ -19,6 +19,9 @@ Menu *initMenu()
     //select4 = Mix_LoadMUS("S4.mp3");
     //enter = Mix_LoadMUS("E1.mp3");
     //Loading music variables is completed.
+    //Init volume
+    // int v = 50;
+    //Mix_VolumeMusic(v);
 
     ////////////////////////////////////////////
     ////////////////////////////////////////////
@@ -39,7 +42,53 @@ Menu *initMenu()
     ////////////////////////////////////////////
     ////////////////////////////////////////////
 
+    //since we're using plain menu images to show our actual menu, we find problems in the selection when using mouse motion
+    //I've thought about a quick solution, implementing invisible squares beneath the menu image, these invis squares will serve as captors for the mouse motion
+    //It's going to be only one image but loaded at 5 different places
+    //while using the mouse motion, i'll use the invis square to change between menu options once the mouse was detected on it :)
+    //as I thought, I'm going to need to load 5 invis squares of different dimensions, pain in the butt.
 
+
+    //first block
+    m->invis_butt1 = IMG_Load("inv1.png");
+    m->x_invis_butt1.w = m->invis_butt1->w;
+    m->x_invis_butt1.h = m->invis_butt1->h;
+    m->x_invis_butt1.x = screen->w/1.25 - m->x_invis_butt1.w/2;
+    m->x_invis_butt1.y = (screen->h*40 / 100) - m->x_invis_butt1.h/2;
+
+
+    //second block
+    m->invis_butt2 = IMG_Load("inv2.png");
+    m->x_invis_butt2.w = m->invis_butt2->w;
+    m->x_invis_butt2.h = m->invis_butt2->h;
+    m->x_invis_butt2.x = screen->w/1.25 - m->x_invis_butt2.w/2;
+    m->x_invis_butt2.y = (screen->h*50 / 100) - m->x_invis_butt2.h/2;
+
+    //third block
+    m->invis_butt3 = IMG_Load("inv3.png");
+    m->x_invis_butt3.w = m->invis_butt3->w;
+    m->x_invis_butt3.h = m->invis_butt3->h;
+    m->x_invis_butt3.x = screen->w/1.25 - m->x_invis_butt3.w/2;
+    m->x_invis_butt3.y = (screen->h*60 / 100) - m->x_invis_butt3.h/2;
+
+    //fourth block
+    m->invis_butt4 = IMG_Load("inv4.png");
+    m->x_invis_butt4.w = m->invis_butt4->w;
+    m->x_invis_butt4.h = m->invis_butt4->h;
+    m->x_invis_butt4.x = screen->w/1.25 - m->x_invis_butt4.w/2;
+    m->x_invis_butt4.y = (screen->h*70 / 100) - m->x_invis_butt4.h/2;
+
+    //fifth block
+    m->invis_butt5 = IMG_Load("inv5.png");
+    m->x_invis_butt5.w = m->invis_butt5->w;
+    m->x_invis_butt5.h = m->invis_butt5->h;
+    m->x_invis_butt5.x = screen->w/1.10 - m->x_invis_butt5.w/2;
+    m->x_invis_butt5.y = (screen->h*80 / 100) - m->x_invis_butt5.h/2;
+
+    /*m->x_play.w = m->butt_play->w;
+    m->x_play.h = m->butt_play->h;
+    m->x_play.x = screen->w/2 - m->x_play.w / 2;
+    m->x_play.y = (screen->h*30/100) - m->x_play.h/2;*/
 
 
 
