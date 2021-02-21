@@ -7,6 +7,7 @@ Menu *initMenu()
     Menu *m;
     m = malloc(sizeof (Menu));
     m->bg = IMG_Load("bg.png");
+    //We are having problems compiling on linux so we did all this on windows but we can't also compile mixer on codeblocks so yeah
     //Init Audio for the Menu
     //int Mix_Init(MIX_INIT_MP3);
     //Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 1024);
@@ -84,14 +85,6 @@ Menu *initMenu()
     m->x_invis_butt5.h = m->invis_butt5->h;
     m->x_invis_butt5.x = screen->w/1.10 - m->x_invis_butt5.w/2;
     m->x_invis_butt5.y = (screen->h*80 / 100) - m->x_invis_butt5.h/2;
-
-    /*m->x_play.w = m->butt_play->w;
-    m->x_play.h = m->butt_play->h;
-    m->x_play.x = screen->w/2 - m->x_play.w / 2;
-    m->x_play.y = (screen->h*30/100) - m->x_play.h/2;*/
-
-
-
     return m;
 }
 
@@ -100,11 +93,4 @@ void drawMenu(Menu *m)
 {
     SDL_FillRect(screen, 0, SDL_MapRGB(screen->format, 0, 0, 0));
     SDL_BlitSurface(m->bg, 0, screen,0);
-    //SDL_BlitSurface(m->butt_load, 0, screen, &m->x_load);
-    //SDL_BlitSurface(m->butt_cr, 0, screen, &m->x_cr);
-    //SDL_BlitSurface(m->logo, 0, screen, &m->x_logo);
-    //SDL_BlitSurface(m->butt_play, 0, screen, &m->x_play);
-    //SDL_BlitSurface(m->butt_options, 0, screen, &m->x_options);
-    //SDL_BlitSurface(m->butt_quit, 0, screen, &m->x_quit);
-    //
 }
