@@ -296,11 +296,11 @@
 	<stdlib.h>
 	<SDL_mixer.h>
 
-1613678469 source:c:\users\dell\documents\github\thegame\thegame\menu.c
+1613942135 source:c:\users\dell\documents\github\thegame\thegame\menu.c
 	"Menu.h"
 	"globale.h"
 
-1613393981 c:\users\dell\documents\github\thegame\thegame\menu.h
+1613942027 c:\users\dell\documents\github\thegame\thegame\menu.h
 	<SDL/SDL.h>
 	<SDL/SDL_image.h>
 	<stdlib.h>
@@ -315,7 +315,7 @@
 	<SDL/SDL_image.h>
 	<stdlib.h>
 
-1613780571 source:c:\users\dell\documents\github\thegame\thegame\events.c
+1613942209 source:c:\users\dell\documents\github\thegame\thegame\events.c
 	<SDL/SDL.h>
 	<SDL/SDL_image.h>
 	<stdlib.h>

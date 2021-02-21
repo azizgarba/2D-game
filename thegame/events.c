@@ -37,26 +37,26 @@ void mainprogEvents(Menu *m)
 
                 if (event.key.keysym.sym == SDLK_n)
                 {
-                    SDL_BlitSurface(m->ng_press, 0, screen, &m->x_ng);
+                    SDL_BlitSurface(m->butt_play, 0, screen, 0);
                 }
                 if (event.key.keysym.sym == SDLK_l)
                 {
-                    SDL_BlitSurface(m->lg_press, 0, screen, &m->x_lg);
+                    SDL_BlitSurface(m->butt_load, 0, screen, 0);
                 }
                 if (event.key.keysym.sym == SDLK_o)
                 {
-
+                    SDL_BlitSurface(m->butt_options, 0, screen, 0);
                 }
                 if (event.key.keysym.sym == SDLK_c)
                 {
-
+                    SDL_BlitSurface(m->butt_cr, 0, screen, 0);
                 }
                 if (event.key.keysym.sym == SDLK_a)
                 {
-
+                    SDL_BlitSurface(m->butt_quit, 0, screen, 0);
                 }
             }
-            case SDL_KEYUP:
+            /*case SDL_KEYUP:
             {
                 if (event.key.keysym.sym == SDLK_ESCAPE)
                 {
@@ -65,12 +65,12 @@ void mainprogEvents(Menu *m)
 
                 if (event.key.keysym.sym == SDLK_n)
                 {
-                    SDL_BlitSurface(m->butt_play, 0, screen, &m->x_play);
+                    //SDL_BlitSurface(m->butt_play, 0, screen, 0);
                     //game();
                 }
                 if (event.key.keysym.sym == SDLK_l)
                 {
-                    SDL_BlitSurface(m->butt_load, 0, screen, &m->x_load);
+                    //SDL_BlitSurface(m->butt_load, 0, screen, 0);
                     //loadgame();
                 }
                 if (event.key.keysym.sym == SDLK_o)
@@ -85,7 +85,7 @@ void mainprogEvents(Menu *m)
                 {
                     done = 1;
                 }
-            }
+            }*/
             } // end switch
         } // end events
         // finally, update the screen :)
