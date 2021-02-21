@@ -10,6 +10,7 @@ Menu *initMenu()
     //Init Audio for the Menu
     //int Mix_Init(MIX_INIT_MP3);
 
+
     //
     //
     ////////////////////////////////////////////
