@@ -21,7 +21,7 @@ Menu *initMenu()
     //enter = Mix_LoadMUS("E1.mp3");
     //Loading music variables is completed.
     //Init volume
-    // int v = 50;
+    //int v = 50;
     //Mix_VolumeMusic(v);
 
     ////////////////////////////////////////////

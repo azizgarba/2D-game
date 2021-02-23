@@ -7,7 +7,6 @@
 
 int main ( int argc, char** argv )
 {
-    //int width = 800, height = 600; not really needed actually
 
     // initialize SDL video
     if ( SDL_Init( SDL_INIT_VIDEO ) < 0 )

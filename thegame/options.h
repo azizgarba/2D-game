@@ -6,8 +6,11 @@
 
 
 typedef struct {
-SDL_Surface *window, *windowed, *fullscreen, *volume;
-SDL_Rect x_window, x_windowed, x_fullscreen, x_volume;
+SDL_Surface *window, *windowed, *fullscreen;
+SDL_Rect x_window, x_windowed, x_fullscreen;
+//invisible blocks
+SDL_Surface *invisf, *invisw, *invism, *invisp;
+SDL_Rect x_invisf, x_invisw, x_invism, x_invisp;
 } options;
 
 
