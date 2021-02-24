@@ -7,10 +7,15 @@
 
 int main ( int argc, char** argv )
 {
-    //int width = 800, height = 600; not really needed actually
 
     // initialize SDL video
     if ( SDL_Init( SDL_INIT_VIDEO ) < 0 )
+    {
+        printf( "Unable to init SDL: %s\n", SDL_GetError() );
+        return 1;
+    }
+
+    if ( SDL_Init( SDL_INIT_AUDIO ) < 0 )
     {
         printf( "Unable to init SDL: %s\n", SDL_GetError() );
         return 1;

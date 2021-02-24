@@ -55,6 +55,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="events.h" />
+		<Unit filename="fs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="fs.h" />
 		<Unit filename="globale.h" />
 		<Unit filename="initM.h" />
 		<Unit filename="main.c">

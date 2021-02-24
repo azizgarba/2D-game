@@ -8,11 +8,11 @@
 
 typedef struct
 {
-    SDL_Surface *bg, *butt_play, *butt_options, *butt_quit, *butt_load, *butt_cr, *logo;
-    SDL_Rect x_play, x_options, x_quit, x_load, x_cr, x_logo;
+    SDL_Surface *bg, *butt_play, *butt_options, *butt_quit, *butt_load, *butt_cr;
+    SDL_Rect x_options, x_quit, x_load, x_cr, x_logo;
     //
-    SDL_Surface *ng_press, *op_press, *q_press, *lg_press, *cr_press;
-    SDL_Rect x_ng, x_op, x_q, x_lg, x_crpress;
+    SDL_Surface *invis_butt1, *invis_butt2, *invis_butt3, *invis_butt4, *invis_butt5;
+    SDL_Rect x_invis_butt1, x_invis_butt2, x_invis_butt3, x_invis_butt4, x_invis_butt5;
 } Menu;
 
 Menu *initMenu();
