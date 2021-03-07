@@ -1,0 +1,63 @@
+# depslib dependency file v1.0
+1614594193 source:/home/azizgar/Documents/game ubuntu/game/main.c
+	"menu.h"
+	"globale.h"
+	"events.h"
+
+1614539263 /home/azizgar/Documents/game ubuntu/game/globale.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<SDL/SDL_mixer.h>
+	<SDL/SDL_ttf.h>
+	<SDL/SDL_video.h>
+
+1614540829 source:/home/azizgar/Documents/game ubuntu/game/menu.c
+	"menu.h"
+	"globale.h"
+
+1614539263 /home/azizgar/Documents/game ubuntu/game/menu.h
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<stdlib.h>
+
+1614594428 source:/home/azizgar/Documents/game ubuntu/game/events.c
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<stdlib.h>
+	<SDL/SDL_mixer.h>
+	<SDL/SDL_ttf.h>
+	"events.h"
+	"menu.h"
+	"options.h"
+	"fs.h"
+
+1614265342 /home/azizgar/Documents/game ubuntu/game/events.h
+	"menu.h"
+	"globale.h"
+	"options.h"
+
+1614266871 source:/home/azizgar/Documents/game ubuntu/game/options.c
+	"options.h"
+	"globale.h"
+
+1614266344 /home/azizgar/Documents/game ubuntu/game/options.h
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<stdlib.h>
+
+1614265949 source:/home/azizgar/Documents/game ubuntu/game/fs.c
+	"fs.h"
+	"globale.h"
+
+1614267398 /home/azizgar/Documents/game ubuntu/game/fs.h
+	"menu.h"
+	"globale.h"
+
+1614538871 source:/home/azizgar/Documents/game ubuntu/game/ttf.c
+	"ttf.h"
+
+1614539100 /home/azizgar/Documents/game ubuntu/game/ttf.h
+	"globale.h"
+
