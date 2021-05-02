@@ -1,0 +1,218 @@
+# depslib dependency file v1.0
+1614594193 source:/home/azizgar/Documents/game ubuntu/game/main.c
+	"menu.h"
+	"globale.h"
+	"events.h"
+
+1614266344 
+
+1614539263 /home/azizgar/Documents/game ubuntu/game/globale.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<SDL/SDL_mixer.h>
+	<SDL/SDL_ttf.h>
+	<SDL/SDL_video.h>
+
+1614539263 ideo.h>
+
+1614540829 source:/home/azizgar/Documents/game ubuntu/game/menu.c
+	"menu.h"
+	"globale.h"
+
+1614539100 "
+
+1614539263 /home/azizgar/Documents/game ubuntu/game/menu.h
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<stdlib.h>
+
+1614594428 source:/home/azizgar/Documents/game ubuntu/game/events.c
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<stdlib.h>
+	<SDL/SDL_mixer.h>
+	<SDL/SDL_ttf.h>
+	"events.h"
+	"menu.h"
+	"options.h"
+	"fs.h"
+
+1614265342 /home/azizgar/Documents/game ubuntu/game/events.h
+	"menu.h"
+	"globale.h"
+	"options.h"
+
+1614266871 source:/home/azizgar/Documents/game ubuntu/game/options.c
+	"options.h"
+	"globale.h"
+
+1614266344 /home/azizgar/Documents/game ubuntu/game/options.h
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<stdlib.h>
+
+1614265949 source:/home/azizgar/Documents/game ubuntu/game/fs.c
+	"fs.h"
+	"globale.h"
+
+1614267398 /home/azizgar/Documents/game ubuntu/game/fs.h
+	"menu.h"
+	"globale.h"
+
+1614538871 source:/home/azizgar/Documents/game ubuntu/game/ttf.c
+	"ttf.h"
+
+1614539100 /home/azizgar/Documents/game ubuntu/game/ttf.h
+	"globale.h"
+
+1619823177 source:/home/myriam/Downloads/game/events.c
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<stdlib.h>
+	<SDL/SDL_mixer.h>
+	<SDL/SDL_ttf.h>
+	"head.h"
+
+1619729924 /home/myriam/Downloads/game/events.h
+	"menu.h"
+	"globale.h"
+	"options.h"
+
+1619735774 /home/myriam/Downloads/game/menu.h
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<stdlib.h>
+
+1619734882 /home/myriam/Downloads/game/globale.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<SDL/SDL_mixer.h>
+	<SDL/SDL_ttf.h>
+	<SDL/SDL_video.h>
+	"head.h"
+
+1619735802 /home/myriam/Downloads/game/options.h
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<stdlib.h>
+
+1619735993 /home/myriam/Downloads/game/fs.h
+	"menu.h"
+	"globale.h"
+
+1619729924 source:/home/myriam/Downloads/game/fs.c
+	"fs.h"
+	"globale.h"
+
+1619729924 source:/home/myriam/Downloads/game/main.c
+	"menu.h"
+	"globale.h"
+	"events.h"
+
+1619729924 source:/home/myriam/Downloads/game/menu.c
+	"menu.h"
+	"globale.h"
+
+1619729924 source:/home/myriam/Downloads/game/options.c
+	"options.h"
+	"globale.h"
+
+1619822985 /home/myriam/Downloads/game/head.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<SDL/SDL_video.h>
+	<SDL/SDL_mixer.h>
+	<SDL/SDL_ttf.h>
+	<string.h>
+	<math.h>
+	"menu.h"
+	"globale.h"
+	"head.h"
+	"options.h"
+
+1619822996 source:/home/myriam/Downloads/game/fonction.c
+	"head.h"
+
+1619984828 source:/home/sameh/Downloads/game1/game/events.c
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<stdlib.h>
+	<SDL/SDL_mixer.h>
+	<SDL/SDL_ttf.h>
+	"head.h"
+	"fs.h"
+
+1619985065 /home/sameh/Downloads/game1/game/head.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<SDL/SDL_video.h>
+	<SDL/SDL_mixer.h>
+	<SDL/SDL_ttf.h>
+	<string.h>
+	<math.h>
+	"menu.h"
+	"globale.h"
+	"options.h"
+	"events.h"
+
+1619904006 /home/sameh/Downloads/game1/game/menu.h
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<stdlib.h>
+	"head.h"
+	"events.h"
+
+1619734882 /home/sameh/Downloads/game1/game/globale.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<SDL/SDL_mixer.h>
+	<SDL/SDL_ttf.h>
+	<SDL/SDL_video.h>
+	"head.h"
+
+1619902794 /home/sameh/Downloads/game1/game/options.h
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<stdlib.h>
+
+1619985709 source:/home/sameh/Downloads/game1/game/fonction.c
+	"head.h"
+
+1619729924 source:/home/sameh/Downloads/game1/game/fs.c
+	"fs.h"
+	"globale.h"
+
+1619976898 /home/sameh/Downloads/game1/game/fs.h
+	"menu.h"
+	"globale.h"
+
+1619975730 source:/home/sameh/Downloads/game1/game/main.c
+	"menu.h"
+	"globale.h"
+	"head.h"
+
+1619905417 /home/sameh/Downloads/game1/game/events.h
+	"menu.h"
+	"globale.h"
+	"options.h"
+
+1619904241 source:/home/sameh/Downloads/game1/game/menu.c
+	"menu.h"
+	"globale.h"
+	"head.h"
+
+1619902082 source:/home/sameh/Downloads/game1/game/options.c
+	"options.h"
+	"globale.h"
+	"head.h"
+
